@@ -1,0 +1,128 @@
+2023-09-01 12:36:57.0665|INFO|A.b|Setting up adapter
+2023-09-01 12:36:57.0959|INFO|BStack.VisualStudio.TestAdapter.BStackTestExecutor|NUnit test stated from test explorer
+2023-09-01 12:36:57.0959|INFO|A.b|Invoking browserstack-sdk with args: --skip-build-browserstack "C:\Users\aruli.baskaran\source\repos\BrowserstackIssueProject\BrowserstackIssueProject\bin\Debug\net6.0\BrowserstackIssueProject.dll" --filter ""(FullyQualifiedName=BrowserstackIssueProject.Features.BrowserStackIssueProjectForCustomConfigAndLocalWebVerificationFeature.VerifyMobileAppAndLocalWebVerification)""
+2023-09-01 12:37:43.6608|INFO|A.b|Exec: dotnet browserstack-sdk --skip-build-browserstack "C:\Users\aruli.baskaran\source\repos\BrowserstackIssueProject\BrowserstackIssueProject\bin\Debug\net6.0\BrowserstackIssueProject.dll"
+2023-09-01 12:37:43.6608|INFO|A.b|0 : 
+2023-09-01 12:37:02.0172|INFO|browserstack_sdk.Program|Detected Selenium version 4.12.2
+2023-09-01 12:37:02.0448|INFO|browserstack_sdk.Program|Detected Appium version 5.0.0-beta04
+2023-09-01 12:37:02.3883|INFO|browserstack_sdk.Program|Detected dotnet version 7.0.304
+2023-09-01 12:37:06.8822|INFO|browserstack_sdk.utils|App Uploaded Successfully. ID : bs://9872c20722c1e24005a3bb4bba6e1e1a71af4fe9
+2023-09-01 12:37:06.8822|INFO|browserstack_sdk.Configuration|Using App : bs://9872c20722c1e24005a3bb4bba6e1e1a71af4fe9.
+2023-09-01 12:37:42.8847|INFO|browserstack_sdk.Program|
+C:\Users\aruli.baskaran\source\repos\BrowserstackIssueProject\BrowserstackIssueProject>echo "running bat file" 
+"running bat file"
+
+C:\Users\aruli.baskaran\source\repos\BrowserstackIssueProject\BrowserstackIssueProject>cd C:\Users\aruli.baskaran\source\repos\BrowserstackIssueProject\BrowserstackIssueProject 
+
+C:\Users\aruli.baskaran\source\repos\BrowserstackIssueProject\BrowserstackIssueProject>dotnet test "C:\Users\aruli.baskaran\source\repos\BrowserstackIssueProject\BrowserstackIssueProject\bin\Debug\net6.0\BrowserstackIssueProject.dll" --filter "(FullyQualifiedName=BrowserstackIssueProject.Features.BrowserStackIssueProjectForCustomConfigAndLocalWebVerificationFeature.VerifyMobileAppAndLocalWebVerification)" --no-build  "--logger:trx;LogFileName=C:\Users\aruli.baskaran\AppData\Local\Temp\190\.browserstack\results_dotnet\result_0\NUnit-Browserstack.xml" 
+The following arguments have been ignored : "--no-build"
+Microsoft (R) Test Execution Command Line Tool Version 17.6.0 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+Failed to load extensions from file 'C:\Users\aruli.baskaran\source\repos\BrowserstackIssueProject\BrowserstackIssueProject\bin\Debug\net6.0\ZZStack.TestAdapter.dll'. Please use /diag for more information.
+  Failed VerifyMobileAppAndLocalWebVerification [29 s]
+  Error Message:
+     Expected string length 23 but was 22. Strings differ at index 0.
+  Expected: "Waiting for text input."
+  But was:  "hello@browserstack.com"
+  -----------^
+
+  Stack Trace:
+     at BrowserstackIssueProject.StepDefinitions.BSSteps.GivenPerformActionInSampleMobileApp() in C:\Users\aruli.baskaran\source\repos\BrowserstackIssueProject\BrowserstackIssueProject\StepDefinitions\BSSteps.cs:line 32
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)
+   at BrowserstackIssueProject.Features.BrowserStackIssueProjectForCustomConfigAndLocalWebVerificationFeature.VerifyMobileAppAndLocalWebVerification(BrowserStackIssueProjectForCustomConfigAndLocalWebVerificationFeature this)
+
+  Standard Output Messages:
+ Given Perform action in Sample Mobile App
+ -> error:   Expected string length 23 but was 22. Strings differ at index 0.
+   Expected: "Waiting for text input."
+   But was:  "hello@browserstack.com"
+   -----------^
+  (2.3s)
+
+
+Results File: C:\Users\aruli.baskaran\AppData\Local\Temp\190\.browserstack\results_dotnet\result_0\NUnit-Browserstack.xml
+
+Failed!  - Failed:     1, Passed:     0, Skipped:     0, Total:     1, Duration: 29 s - BrowserstackIssueProject.dll (net6.0)
+
+C:\Users\aruli.baskaran\source\repos\BrowserstackIssueProject\BrowserstackIssueProject>echo "completed bat file" 
+"completed bat file"
+
+
+
+2023-09-01 12:37:43.6608|INFO|A.b|Cleaning up adapter
+2023-09-01 12:37:43.6679|INFO|A.b|Getting results from: C:\Users\aruli.baskaran\AppData\Local\Temp\190\.browserstack
+2023-09-01 12:38:34.7077|INFO|A.b|Setting up adapter
+2023-09-01 12:38:34.7338|INFO|BStack.VisualStudio.TestAdapter.BStackTestExecutor|NUnit test stated from test explorer
+2023-09-01 12:38:34.7338|INFO|A.b|Invoking browserstack-sdk with args: --skip-build-browserstack "C:\Users\aruli.baskaran\source\repos\BrowserstackIssueProject\BrowserstackIssueProject\bin\Debug\net6.0\BrowserstackIssueProject.dll" --filter ""(FullyQualifiedName=BrowserstackIssueProject.Features.BrowserStackIssueProjectForCustomConfigAndLocalWebVerificationFeature.VerifyMobileAppAndLocalWebVerification)""
+2023-09-01 12:39:20.8439|INFO|A.b|Exec: dotnet browserstack-sdk --skip-build-browserstack "C:\Users\aruli.baskaran\source\repos\BrowserstackIssueProject\BrowserstackIssueProject\bin\Debug\net6.0\BrowserstackIssueProject.dll"
+2023-09-01 12:39:20.8439|INFO|A.b|0 : 
+2023-09-01 12:38:39.3799|INFO|browserstack_sdk.Program|Detected Selenium version 4.12.2
+2023-09-01 12:38:39.4038|INFO|browserstack_sdk.Program|Detected Appium version 5.0.0-beta04
+2023-09-01 12:38:39.6866|INFO|browserstack_sdk.Program|Detected dotnet version 7.0.304
+2023-09-01 12:38:40.0813|INFO|browserstack_sdk.utils|Using existing app id bs://9872c20722c1e24005a3bb4bba6e1e1a71af4fe9 for hash : 27de2696bdaf3ea6a8c16edef605534f.
+2023-09-01 12:38:40.0813|INFO|browserstack_sdk.Configuration|Using App : bs://9872c20722c1e24005a3bb4bba6e1e1a71af4fe9.
+2023-09-01 12:39:20.3988|INFO|browserstack_sdk.Program|
+C:\Users\aruli.baskaran\source\repos\BrowserstackIssueProject\BrowserstackIssueProject>echo "running bat file" 
+"running bat file"
+
+C:\Users\aruli.baskaran\source\repos\BrowserstackIssueProject\BrowserstackIssueProject>cd C:\Users\aruli.baskaran\source\repos\BrowserstackIssueProject\BrowserstackIssueProject 
+
+C:\Users\aruli.baskaran\source\repos\BrowserstackIssueProject\BrowserstackIssueProject>dotnet test "C:\Users\aruli.baskaran\source\repos\BrowserstackIssueProject\BrowserstackIssueProject\bin\Debug\net6.0\BrowserstackIssueProject.dll" --filter "(FullyQualifiedName=BrowserstackIssueProject.Features.BrowserStackIssueProjectForCustomConfigAndLocalWebVerificationFeature.VerifyMobileAppAndLocalWebVerification)" --no-build  "--logger:trx;LogFileName=C:\Users\aruli.baskaran\AppData\Local\Temp\190\.browserstack\results_dotnet\result_0\NUnit-Browserstack.xml" 
+The following arguments have been ignored : "--no-build"
+Microsoft (R) Test Execution Command Line Tool Version 17.6.0 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+Failed to load extensions from file 'C:\Users\aruli.baskaran\source\repos\BrowserstackIssueProject\BrowserstackIssueProject\bin\Debug\net6.0\ZZStack.TestAdapter.dll'. Please use /diag for more information.
+Results File: C:\Users\aruli.baskaran\AppData\Local\Temp\190\.browserstack\results_dotnet\result_0\NUnit-Browserstack.xml
+
+Passed!  - Failed:     0, Passed:     1, Skipped:     0, Total:     1, Duration: 32 s - BrowserstackIssueProject.dll (net6.0)
+
+C:\Users\aruli.baskaran\source\repos\BrowserstackIssueProject\BrowserstackIssueProject>echo "completed bat file" 
+"completed bat file"
+
+
+
+2023-09-01 12:39:20.8439|INFO|A.b|Cleaning up adapter
+2023-09-01 12:39:20.8439|INFO|A.b|Getting results from: C:\Users\aruli.baskaran\AppData\Local\Temp\190\.browserstack
+2023-09-01 12:44:44.7817|INFO|A.b|Setting up adapter
+2023-09-01 12:44:44.8077|INFO|BStack.VisualStudio.TestAdapter.BStackTestExecutor|NUnit test stated from test explorer
+2023-09-01 12:44:44.8077|INFO|A.b|Invoking browserstack-sdk with args: --skip-build-browserstack "C:\Users\aruli.baskaran\source\repos\BrowserstackIssueProject\BrowserstackIssueProject\bin\Debug\net6.0\BrowserstackIssueProject.dll" --filter ""(FullyQualifiedName=BrowserstackIssueProject.Features.BrowserStackIssueProjectForCustomConfigAndLocalWebVerificationFeature.VerifyMobileAppAndLocalWebVerification)""
+2023-09-01 12:48:37.1492|INFO|A.b|Exec: dotnet browserstack-sdk --skip-build-browserstack "C:\Users\aruli.baskaran\source\repos\BrowserstackIssueProject\BrowserstackIssueProject\bin\Debug\net6.0\BrowserstackIssueProject.dll"
+2023-09-01 12:48:37.1492|INFO|A.b|0 : 
+2023-09-01 12:44:48.8725|INFO|browserstack_sdk.Program|Detected Selenium version 4.12.2
+2023-09-01 12:44:48.8958|INFO|browserstack_sdk.Program|Detected Appium version 5.0.0-beta04
+2023-09-01 12:44:49.1829|INFO|browserstack_sdk.Program|Detected dotnet version 7.0.304
+2023-09-01 12:44:49.6656|INFO|browserstack_sdk.utils|Using existing app id bs://9872c20722c1e24005a3bb4bba6e1e1a71af4fe9 for hash : 27de2696bdaf3ea6a8c16edef605534f.
+2023-09-01 12:44:49.6656|INFO|browserstack_sdk.Configuration|Using App : bs://9872c20722c1e24005a3bb4bba6e1e1a71af4fe9.
+2023-09-01 12:48:36.6903|INFO|browserstack_sdk.Program|
+C:\Users\aruli.baskaran\source\repos\BrowserstackIssueProject\BrowserstackIssueProject>echo "running bat file" 
+"running bat file"
+
+C:\Users\aruli.baskaran\source\repos\BrowserstackIssueProject\BrowserstackIssueProject>cd C:\Users\aruli.baskaran\source\repos\BrowserstackIssueProject\BrowserstackIssueProject 
+
+C:\Users\aruli.baskaran\source\repos\BrowserstackIssueProject\BrowserstackIssueProject>dotnet test "C:\Users\aruli.baskaran\source\repos\BrowserstackIssueProject\BrowserstackIssueProject\bin\Debug\net6.0\BrowserstackIssueProject.dll" --filter "(FullyQualifiedName=BrowserstackIssueProject.Features.BrowserStackIssueProjectForCustomConfigAndLocalWebVerificationFeature.VerifyMobileAppAndLocalWebVerification)" --no-build  "--logger:trx;LogFileName=C:\Users\aruli.baskaran\AppData\Local\Temp\190\.browserstack\results_dotnet\result_0\NUnit-Browserstack.xml" 
+The following arguments have been ignored : "--no-build"
+Microsoft (R) Test Execution Command Line Tool Version 17.6.0 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+Failed to load extensions from file 'C:\Users\aruli.baskaran\source\repos\BrowserstackIssueProject\BrowserstackIssueProject\bin\Debug\net6.0\ZZStack.TestAdapter.dll'. Please use /diag for more information.
+Results File: C:\Users\aruli.baskaran\AppData\Local\Temp\190\.browserstack\results_dotnet\result_0\NUnit-Browserstack.xml
+
+Passed!  - Failed:     0, Passed:     1, Skipped:     0, Total:     1, Duration: 3 m 41 s - BrowserstackIssueProject.dll (net6.0)
+
+C:\Users\aruli.baskaran\source\repos\BrowserstackIssueProject\BrowserstackIssueProject>echo "completed bat file" 
+"completed bat file"
+
+
+
+2023-09-01 12:48:37.1492|INFO|A.b|Cleaning up adapter
+2023-09-01 12:48:37.1492|INFO|A.b|Getting results from: C:\Users\aruli.baskaran\AppData\Local\Temp\190\.browserstack
